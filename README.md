@@ -1,28 +1,30 @@
-# Conversor de número Decimal para Binário na linguagem Fortran 95
+# Conversão na linguagem Fortran 95
 
 ## Objetivo:
 
-**Um programa pra converter numero decimal em binário**
+**Um programa pra converter um número inteiro decimal em binário**
 
 *extras: adicionar hexadecimal, e fazer todas permutações + menu de seleção*
 
 ## Descrição & Exemplo:
 
- A conversão de um número inteiro decimal x para o número b, expresso em base binária, é feita através do processo de divisões sucessivas de x por 2, realizadas enquanto x for maior do que 0. 
- A cada iteração i, para i=0, 1,... , a divisão de x por 2 produz um quociente q e um resto r (que só pode ser 0 ou 1, obviamente). O resto r é o i-ésimo dígito de b, como no exemplo abaixo:
+Para convertermos um número inteiro D na base decimal para um número binário B, devemos dividir D por 2 enquanto D > 0. Os restos das divisões realizadas em D (0 ou 1), formam o número binário. O resto da primeira divisão é o ultimo valor que ocupa a ultima casa do numero binário.
 
- x=12
+### Exemplo:
+ x= 18
 
- |i |	x |	q |	r |	b|
-| :----- | :---- | :----| :----| :---- |
- |0 |	12|	6 |	0 |	0 |
- |1 |	6 |	3 |	0 |	00|
- |2 |    3 |	1 |	1 |	100|
-| 4 |	1 |	0 |	1 |	1100|
+ |  i   |	D   |	quociente   |   resto   |   B        |
+ | :--- | :---- | :----         | :----     | :-------   |
+ |  0   |   18  |   9           |   0       |   0        |
+ |  1   |   9   |     4         |    1      |     10     |
+ |  2   |   4   |      2        |      0    |      010   |
+ |  4   |   2   |       1       |     0     |     0010   |
+ |  5   |   1   |        0      |     1     |     10010  |
+
+B = 10010
 
 
-
-Ler valor inteiro X e chamar uma função que devolve B em binário
+Ler valor inteiro B, chamar uma função que devolve B
 
 ## Milestones
 - [ ] aprender a converter decimal pra binário
