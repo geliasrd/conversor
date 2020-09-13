@@ -26,23 +26,32 @@ B = 10010
 
 Ler valor inteiro B, chamar uma função que devolve B
 
-## Milestones
-- [ ] aprender a converter decimal pra binário
-- [ ] aprender a syntaxe + operações + input e output no F95
-- [ ] aprender a fazer uma função
-- [ ] implementar a função
+## Milestones:
+- [x] aprender a converter decimal pra binário
+- [x] aprender a syntaxe básica + operações + input e output no F95
+- [x] divisor com resto
+- [ ] while loop    
+- [ ] converter integer em string
+- [ ] concatenar strings
+- [ ] aprender função ou subrotina (ainda não sei o melhor pra situação)
+- [ ] implementar a função/subrotina
+  
+#### Extras:
 - [ ] implementar o menu de input
-
+- [ ] aprender binário pra decimal
 
 -----------------
 
 ### Convertendo decimal pra binário
-X (dec) pra B (bin)
+D (dec) pra B (bin)
 
 
-Dividir por 2 e separar o resto (mantendo X numero inteiro) enquanto X > 0
+Dividir por 2 e separar o resto (mantendo D numero inteiro) enquanto D > 0
 
 - dividir com resto
 - armazenar variavel
 - loop
+- if + stop pra seletor
 - função
+
+-----------------
